@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.mod.ui.CircleImageView;
 import com.mod.utils.PreferenceUtil;
 
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends Activity implements View.OnClickListener{
+
+    CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class LoginActivity extends Activity {
             Intent intent = new Intent(this, WelcomeActivity.class);
             startActivity(intent);
         }
+        circleImageView = (CircleImageView)findViewById(R.id.login_avatar);
+        circleImageView.setOnClickListener(this);
     }
 
     @Override
@@ -41,5 +47,15 @@ public class LoginActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.login_avatar:
+                Intent intent = new Intent(this, RegisterActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }

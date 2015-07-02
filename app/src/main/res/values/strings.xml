@@ -4,4 +4,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="welcome_inter">即刻登录</string>
+    <string name="text_register">注册</string>
+    <string name="register_username">用户名:</string>
+    <string name="register_pwd">密码:</string>
+    <string name="register_pwd_confirm">确认密码:</string>
+    <string name="register_phone_num">手机号:</string>
+    <string name="register_sucess">注册成功</string>
+
 </resources>
