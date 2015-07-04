@@ -61,7 +61,7 @@
                 style="@style/title_register_item"
                 android:text="@string/register_pwd"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/register_pwd_value"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -82,7 +82,7 @@
                 style="@style/title_register_item"
                 android:text="@string/register_pwd_confirm"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/register_pwd_confirm_value"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -103,7 +103,7 @@
                 style="@style/title_register_item"
                 android:text="@string/register_phone_num"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/register_phone_num"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

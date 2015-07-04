@@ -23,4 +23,18 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="radio_button_style">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="login_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_checkbox_sel</item>
+       <!-- <item name="android:background">@drawable/login_checkbox_sel</item>-->
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
