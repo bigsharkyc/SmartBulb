@@ -15,7 +15,7 @@
             android:layout_height="160dp"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/welcome1"
+            android:src="@drawable/ic_del"
             android:layout_marginBottom="10dp"
             app:border_color="@color/accent_material_light"
             app:border_width="2dp"/>
@@ -41,7 +41,7 @@
                 style="@style/title_register_item"
                 android:text="@string/register_username"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/register_user_value"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

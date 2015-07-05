@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:orientation="vertical"
             android:background="@drawable/bg_login_header">
 
@@ -27,97 +27,119 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
 
-         <!--   <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">-->
-
-                <LinearLayout
-                    android:id="@+id/login_user_layout"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="78dp"
-                    android:layout_height="@dimen/text_item_height"
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_login_user_layout">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/bg_login_user"
-                        android:scaleType="centerInside"/>
-
-                    <TextView
-                        android:id="@+id/login_user_name"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:maxLines="1"
-                        style="@style/text_register_item"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/login_user_pwd_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/text_item_height"
-                    android:background="@drawable/bg_login_pwd_layout">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/bg_login_pwd"
-                        android:scaleType="centerInside"/>
-
-                    <TextView
-                        android:id="@+id/login_user_pwd"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:maxLines="1"
-                        style="@style/text_register_item"/>
-                </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/login_user_layout"
                 android:layout_width="match_parent"
+                android:layout_marginTop="78dp"
                 android:layout_height="@dimen/text_item_height"
                 android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/login_keep_pwd"
-                    style="@style/login_checkbox_style"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:text="@string/login_keep_pwd"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_login_user"
+                    android:scaleType="centerInside"/>
 
-                <CheckBox
-                    android:id="@+id/login_auto"
-                    style="@style/login_checkbox_style"
-                    android:layout_weight="1"
-                    android:layout_alignParentRight="true"/>
-
+                <com.mod.ui.EditDelText
+                    android:id="@+id/login_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:maxLines="1"
+                    style="@style/text_register_item"/>
             </LinearLayout>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/text_item_height"
-                    android:layout_marginTop="35dp"
-                    android:background="@drawable/bg_btn_login"
-                    android:text="@string/login_sumit"
-                    android:textSize="18sp"/>
+            <LinearLayout
+                android:id="@+id/login_user_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_item_height">
 
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_login_pwd"
+                    android:scaleType="centerInside"/>
 
-<!--            </RelativeLayout>-->
+                <com.mod.ui.EditDelText
+                    android:id="@+id/login_user_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:maxLines="1"
+                    style="@style/text_register_item"/>
+            </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_item_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/login_keep_pwd"
+                        style="@style/login_checkbox_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:layout_gravity="left|center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left|center"
+                        android:gravity="center_vertical"
+                        android:text="@string/login_keep_pwd"
+                        android:textColor="#a8a8a7"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <CheckBox
+                        android:id="@+id/login_auto"
+                        style="@style/login_checkbox_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left|center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left|center"
+                        android:gravity="center_vertical"
+                        android:text="@string/login_auto"
+                        android:textColor="#a8a8a7"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_item_height"
+            android:layout_marginTop="35dp"
+            android:text="@string/login_summit"
+            android:textSize="18sp"/>
+            
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -125,10 +147,39 @@
         android:id="@+id/login_avatar"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:src="@drawable/bg_splash"
+        android:src="@drawable/ic_del"
         android:layout_centerHorizontal="true"
         app:border_color="#fff"
         android:layout_marginTop="@dimen/login_avatar_margin_top"
         app:border_width="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_create_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/login_create_account"/>
+
+        <TextView
+            android:id="@+id/login_find_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/login_forget_pwd"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
