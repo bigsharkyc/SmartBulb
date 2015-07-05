@@ -42,12 +42,12 @@ public class LoginActivity extends Activity implements View.OnClickListener, Jni
 //        }
 
         init();
-        
-        helper = new JniHelper();
-        mLoginHandler = new LoginHandler();
+
     }
 
     private void init(){
+        helper = new JniHelper();
+        mLoginHandler = new LoginHandler();
         circleImageView = (CircleImageView)findViewById(R.id.login_avatar);
         mLoginBtn = (Button)findViewById(R.id.btn_login);
         mUserName = (EditDelText)findViewById(R.id.login_user_name);
